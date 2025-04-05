@@ -1,3 +1,24 @@
 /node_modules
 dist
 .parcel-cache
+
+//Notes:
+// if you want to apply inline css int react then you have deaclare a avriable and need to write all stylees inside that and then you can you that varible to put in style tab inside {}
+// const styleCards = {
+//   backgroundColor: "lightblue",
+// };
+// style={styleCards}
+
+{/* Below passing props to component but manually */}
+        {/* <RestaurantCard
+          resName="Dominozz "
+          cusinses="Pizza"
+          rating="4.5"
+          address="Akurdi Railway Station"
+        /> */}
+
+//dont use indexes as keys. it is bad practice
+//always give unique keys to elements
+//not using keys(not acceptable) <<<<indexes as key <<<unique id (best practice)
+
+//Config driven UI 
