@@ -65,7 +65,7 @@
 
 .cuisines {
   padding: 5px 7px;
-  white-space: nowrap; /* don't allow wrapping */
+  white-space: nowrap;
   overflow: hidden;
   line-height: 1;
 }
