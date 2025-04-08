@@ -11,6 +11,7 @@ const Body = () => {
   // const [listOfRestaurant, setlistOfRestaurant]=arr;
   // const listOfRestaurant=arr[0];
   // const setlistOfRestaurant=arr[1];
+
   console.log(listOfRestaurant);
   return (
     <div className="body">
