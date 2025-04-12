@@ -3,13 +3,15 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 import { CDN_URL } from "../utils/constant";
 
+//This page is for reataurant card which gives the card view of each resto
+
 const RestaurantCard = (props) => {
   const { resData } = props;
   const { cloudinaryImageId, name, avgRatingString, cuisines, areaName } =
     resData.card.card.info; //Destructuring the props
   const { slaString } = resData.card.card.info.sla;
   // console.log(resData);
-  // console.log(resData[0].card.card.info.name);
+
   return (
     <div className="res-card">
       <img className="food-img" src={CDN_URL + cloudinaryImageId} />

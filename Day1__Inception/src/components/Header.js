@@ -1,5 +1,10 @@
+import { useEffect, useState } from "react";
 import { LOGO_URL } from "../utils/constant.js";
+import { Link } from "react-router";
+
 const Header = () => {
+  const [btnNameReact, setBtnNameReact] = useState("Login");
+
   return (
     <div className="header">
       <div>
@@ -8,11 +13,28 @@ const Header = () => {
 
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact US </li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact US</Link>
+          </li>
           <li>Cart</li>
         </ul>
+        {/* toggling the button on click */}
+        <button
+          className="login-btn"
+          onClick={() => {
+            btnNameReact === "Login"
+              ? setBtnNameReact("Logout")
+              : setBtnNameReact("Login");
+          }}
+        >
+          {btnNameReact}
+        </button>
       </div>
     </div>
   );
